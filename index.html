@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+ 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Age calculator app</title>
+
+
+</head>
+<body>
+  <div id="maindiv" class="  bg-gray-100 flex items-center justify-center min-h-screen font-extrabold   " >
+
+        <div class="bg-white  shadow-2xl rounded-tl-2xl  rounded-tr-2xl rounded-bl-2xl rounded-br-[120px] ">
+          <div class="flex lg:gap-4 lg:p-12 p-2 gap-2 lg:mr-44  text-xl  lg:text-2xl">
+               <ul class="flex flex-col gap-2  ">
+                       <label class=" text-gray-500 " for="Day">Day</label>
+                       <input  class="h-12  w-24 border p-2 rounded-md " id="date" type="text" name="Day" placeholder="DD">
+               </ul>
+              <ul class="flex flex-col gap-2">
+                      <label class="text-gray-500" for="Month">Month</label>
+                      <input class="h-12 t w-24 border p-2 rounded-md" id="month" type="text" name="Month" placeholder="MM">
+             </ul>
+             <ul class="flex flex-col gap-2">
+                      <label class=" text-gray-500 " for="Year">Year</label>
+                       <input  class="h-12  w-24 border p-2 rounded-md" id="year" type="text" name="Year" placeholder="YYYY">
+              </ul>
+        </div>
+        <div class="relative  mt-8">
+             <hr class="lg:mx-12 ml-4 lg:mr-8 md:mr-8 mr-4">
+             <button id="mainbutton"   class="absolute right-32 lg:right-4 md:right-32  top-[-28px] bg-violet-600 hover:bg-black shadow-md rounded-full p-2"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
+      </div>
+      <div class="lg:p-12 p-2 mt-8 mb-4">
+        <ul class="lg:text-7xl text-4xl">
+          <li class="flex"> <p id="years" class="text-violet-600 animate-blink">--</p> years</li>
+          <li class="flex"> <p id="months" class="text-violet-600 animate-blink">--</p> months</li>
+          <li class="flex"> <p id="days" class="text-violet-600 animate-blink">--</p> days</li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
